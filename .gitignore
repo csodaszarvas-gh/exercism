@@ -1,10 +1,15 @@
-/two-fer/.exercism/metadata.json
-/hello-world/.exercism/metadata.json
+/hello-world/.exercism
 /hello-world/build
 /hello-world/.gradle
+/two-fer/.exercism
 /two-fer/build
 /two-fer/.gradle
+/reverse-string/.exercism
 /reverse-string/build
 /reverse-string/.gradle
+/leap/.exercism
 /leap/build
 /leap/.gradle
+/resistor-color/.exercism
+/resistor-color/.gradle
+/resistor-color/.build
