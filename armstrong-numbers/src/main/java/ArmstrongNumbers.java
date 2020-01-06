@@ -3,21 +3,14 @@ import java.util.ArrayList;
 class ArmstrongNumbers {
 
 	boolean isArmstrongNumber(int numberToCheck) {
-
-		if(numberToCheck == 0)
-			return true;
-
 		ArrayList<Integer> numbers = intToArrayList(numberToCheck);
 
 		int result = 0;
-		for(int i=0; i < numbers.size(); i++){
-			result += Math.pow(numbers.get(i), numbers.size());
+		for(int number : numbers){
+			result += Math.pow(number, numbers.size());
 		}
 
-		if(result == numberToCheck)
-			return true;
-
-		return false;
+		return result == numberToCheck;
 	}
 
 	ArrayList<Integer> intToArrayList(int number){
