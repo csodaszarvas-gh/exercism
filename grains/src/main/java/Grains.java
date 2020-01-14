@@ -1,10 +1,15 @@
 import java.math.BigInteger;
 
-class Grains {
+class Grains extends Exception {
+    private static final String wrongSquareMessage = "square must be between 1 and 64";
 
     BigInteger grainsOnSquare(final int square) {
-        BigInteger base = new BigInteger("2");
-        return base.pow(square-1);
+        if (square > 0 && square < 65){
+            BigInteger base = new BigInteger("2");
+            return base.pow(square-1);
+        }
+        else
+            throw new IllegalArgumentException(wrongSquareMessage);
     }
 
     BigInteger grainsOnBoard() {
