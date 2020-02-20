@@ -1,3 +1,4 @@
+.gradle
 /hello-world/.exercism
 /hello-world/build
 /hello-world/.gradle
@@ -52,3 +53,6 @@
 /raindrops/.exercism
 /raindrops/.gradle
 /raindrops/build
+/difference-of-squares/.exercism
+/difference-of-squares/.gradle
+/difference-of-squares/build
