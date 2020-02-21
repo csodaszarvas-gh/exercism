@@ -1,15 +1,23 @@
 class DifferenceOfSquaresCalculator {
 
     int computeSquareOfSumTo(int input) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        int result = 0;
+        for (;input>0; input--){
+            result += input;
+        }
+        return (int)Math.pow(result, 2);
     }
 
     int computeSumOfSquaresTo(int input) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        int result = 0;
+        for (;input>0; input--){
+            result += (int)Math.pow(input, 2);
+        }
+        return result;
     }
 
     int computeDifferenceOfSquares(int input) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return computeSquareOfSumTo(input) - computeSumOfSquaresTo(input);
     }
 
 }
